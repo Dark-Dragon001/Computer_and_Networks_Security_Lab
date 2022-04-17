@@ -1,0 +1,20 @@
+Computer and Network Security 
+
+Gathering Information about the victim:
+
+	The first step is to use "ifconfig" and learn what is your network range and ip address. After learning that with the help of nmap we can see how many of the addresses on the nertwork is up and running. By typing the  nmap and ip address range for example "namp -sP 192.168.10.0/24" it will bring up all active hosts on this ip address range.
+	Furthermore, to learn about all the open prots on different hosts we use "nmap -sS 192.168.100.0.24" in this stage we can search for a specific port on a specific host just by adding the ip address of the host and the port we want information about. Not to mention, we write "-p" befor the address of the specific port.
+	In the next step, nmap can detect teh os of a host by typing "nmap -O ip-address".
+	
+Checking the traffic on the victim host:
+	
+	To monitor the incoming and outgoing traffic on our system, we use "iftop". "iftop" is a tool that you insall on your linux system and run it on your system. This tool shows all the traffic the comes to your system with their source ip address and size of the packet sent and recieved.
+	
+Defendign aginst an attack:
+
+	To defend an attack on your linux system fist we should acquire the knowledge of open ports on our system. To do that we can use "netstat" software. After acquiring the knowledge of the open ports on our system we can close all vulnerable ports for example lets say port 80 is open and we have apache web server running on it, we can close this port using "service apache2 stop". Furthermore, changing the devices mac address can confuse the attacker as well. There many ways to do so, however we use "macchanger" to chane our devices mac address. Images for each step of the process has been captured and attached.
+
+						
+						
+		Muhammad Rafi Khudayar
+	
