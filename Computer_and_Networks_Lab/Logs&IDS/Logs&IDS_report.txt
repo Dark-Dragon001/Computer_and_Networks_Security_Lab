@@ -1,0 +1,9 @@
+Looking into logs and IDS
+
+    First of all, in the "var/log/apache" directory I can check all the logs regarding the apache server. In the log file it shows that ip address of my Kali linux and the software I used to gather information. It shows that someone tried to interact wiht your system. All these files are listed as "access.log.1", "access.log.2".
+    
+    For the IDS par I downloaded "suricata" which is an open source linux IDS software. Now that "suricata" is installed on my mahcine, I can run it by typing "/etc.init.d/suricata start". It will ask for your sudo password to run. Since the deafult interface of suricata is "eth0", I have to change it with my active interface. To change it I will have to go to "/etc/default" and "nano suricata" and replace the interface name with the active interface on my system. In addition, to change the rules of define your own rules for this IDS system you can enter the directory "/etc/suricata/rules" and check the rules by yourself or maybe change them. Inside "/etc/suricata" there is a config file called "threshold.config" inside this file you can even reduce the number of connections by written thier address ranges.
+
+                        Muhammad Rafi Khudayar
+
+    
