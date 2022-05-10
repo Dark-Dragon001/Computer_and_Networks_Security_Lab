@@ -1,0 +1,5 @@
+Defending against an attack
+
+	To follow up with the weeks before in which we did Information gathering, Attaking which I did provide the report, we will try to defend against and attacker.
+	To defend against an attack I use "Suricata" IDS and tryed changing my MAC Address with "macchanger", as I have already submited and sent the report in my las submition. However, we can use "iptables" packet filterer and firewall to block incoming packets from a specific address of a whole range of address. We can even block ports and define rules of our own. Ip tables can be used on a router, switch or a PC.
+	To block a specific incoming address we use "sudo iptables -A INPUT -s ipaddress -j Drop". All the incoming packets from the specified address will be droped without our knowledge.
